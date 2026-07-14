@@ -1,0 +1,90 @@
+/* Full page */
+#webpage {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Glass Card */
+#loginpage {
+    width: 900px;
+    height: 550px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+
+/* Left Section */
+#logo {
+    width: 45%;
+    text-align: center;
+    color: white;
+}
+
+#logo img {
+    width: 180px;
+}
+
+/* Right Section */
+#loginfields {
+    width: 40%;
+}
+
+#loginfields h2,
+#loginfields label,
+#signupdivid p {
+    color: white;
+}
+
+/* Inputs */
+.form-control {
+    background: rgba(255,255,255,0.20);
+    border: 1px solid rgba(255,255,255,0.30);
+    color: white;
+}
+
+.form-control::placeholder {
+    color: rgba(255,255,255,0.75);
+}
+
+.form-control:focus {
+    background: rgba(255,255,255,0.25);
+    color: white;
+    border-color: white;
+    box-shadow: none;
+}
+
+/* Button */
+#loginbuttonid {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Signup link */
+#signupdivid a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#signupdivid a:hover {
+    color: #dbeafe;
+}
