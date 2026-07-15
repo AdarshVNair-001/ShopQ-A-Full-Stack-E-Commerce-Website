@@ -1,0 +1,141 @@
+/* Full Page */
+#signuppagedivid{
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+/* Signup Card */
+#inputfieldsdivid{
+    width:450px;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    box-shadow:0 10px 35px rgba(0,0,0,.25);
+}
+
+/* Form */
+#signupfields{
+    display:flex;
+    flex-direction:column;
+}
+
+#passwordeye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1rem;
+    z-index: 2;
+}
+
+#passworddivid {
+    position: relative;
+}
+
+/* Heading */
+#signupfields h2{
+    text-align:center;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+/* Labels */
+.form-label{
+    color:#fff;
+    font-weight:500;
+    margin-bottom:5px;
+}
+
+/* Input Divs */
+#usernamedivid,
+#passworddivid,
+#passwordrenterdivid{
+    margin-bottom:20px;
+}
+
+/* Inputs */
+.form-control{
+    background:rgba(255,255,255,.15);
+    color:#fff;
+
+    border:1px solid rgba(255,255,255,.3);
+
+    border-radius:10px;
+
+    padding:12px;
+}
+
+.form-control::placeholder{
+    color:rgba(255,255,255,.75);
+}
+
+.form-control:focus{
+    background:rgba(255,255,255,.25);
+
+    border-color:#fff;
+
+    color:#fff;
+
+    box-shadow:none;
+}
+
+/* Button */
+#createaccountbuttonid{
+    width:100%;
+
+    padding:12px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+#createaccountbuttonid:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+#passworddivid,
+#passwordrenterdivid{
+    position: relative;
+}
+
+#passwordeye,
+#repasswordeye{
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+    z-index: 10;
+}
+
+#passwordeye:hover,
+#repasswordeye:hover{
+    color: #000;
+}

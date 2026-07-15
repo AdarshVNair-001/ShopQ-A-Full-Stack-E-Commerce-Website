@@ -1,35 +1,66 @@
 <div id="webpage">
-    <div id="loginpage">
-        
-        <div id="logo">
-            <img src="assets/images/logo.png" alt="Logo" />
-            <h1>ShopQ</h1>
-            <h4><i>The Ultimate Shoping Experience</i></h4>
-        </div>
-
-        <div id="loginfields">
-            <span>
-                <h2>Login</h2>
-            </span>
-            <div>
-                <form>
-                    <div id="usernamedivid">
-                        <input type="text" placeholder="username" id="usernameid" class="form-control mt-3"/>
-                        <label for="usernameid" id="usernameid" class="form-label">Username</label>
-                    </div>
-                    <div id="passworddivid">
-                        <input type="password" placeholder="password" id="passwordid" class="form-control mt-3"/>
-                        <label for="passwordid" id="passwordid" class="form-label">Password</label>
-                    </div>
-                    <div id="loginbuttondivid">
-                        <button type="button" class="btn btn-primary mt-3" id="loginbuttonid" >Login</button>
-                    </div>
-                    <div id="signupdivid">
-                        <p>Don't have an account? <a routerLink="/signup">Sign up</a></p>
-                    </div>
-                </form>
-            </div>
-        </div>
-
+  <div id="loginpage">
+    <div id="logo">
+      <img src="assets/images/logo.png" alt="Logo" />
+      <h1>ShopQ</h1>
+      <h4><i>The Ultimate Shopping Experience</i></h4>
     </div>
+
+    <div id="loginfields">
+      <h2>Login</h2>
+
+      <form>
+        
+        <div id="usernamedivid">
+          <label for="usernameid" class="form-label"> Username </label>
+
+          <input
+            type="text"
+            id="usernameid"
+            class="form-control"
+            placeholder="Enter Username"
+          />
+        </div>
+
+        
+        <div id="passworddivid">
+          <label for="passwordid" class="form-label"> Password </label>
+
+          <input
+            [type]="showPassword ? 'text' : 'password'"
+            id="passwordid"
+            class="form-control pe-5"
+            placeholder="Enter Password"
+          />
+
+          <i
+            class="bi"
+            [ngClass]="showPassword ? 'bi-eye-slash-fill' : 'bi-eye-fill'"
+            (click)="togglePassword()"
+            id="passwordeye"
+          >
+          </i>
+        </div>
+
+     
+        <div id="loginbuttondivid">
+          <button
+            type="button"
+            class="btn btn-primary w-100 mt-3"
+            id="loginbuttonid"
+          >
+            Login
+          </button>
+        </div>
+
+        
+        <div id="signupdivid">
+          <p>
+            Don't have an account?
+            <a routerLink="/signup">Sign up</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,63 @@
+<div id="signuppagedivid">
+  <div id="inputfieldsdivid">
+    <form id="signupfields">
+      <div id="usernamedivid">
+        <label for="usernameid" class="form-label">Username</label>
+        <input
+          type="text"
+          id="usernameid"
+          class="form-control"
+          placeholder="Enter Username"
+        />
+      </div>
+
+      <div id="passworddivid">
+        <label for="passwordid" class="form-label"> Password </label>
+
+        <input
+          [type]="showPassword ? 'text' : 'password'"
+          id="passwordid"
+          class="form-control pe-5"
+          placeholder="Enter Password"
+        />
+
+        <i
+          class="bi"
+          [ngClass]="showPassword ? 'bi-eye-slash-fill' : 'bi-eye-fill'"
+          (click)="togglePassword()"
+          id="passwordeye"
+        >
+        </i>
+      </div>
+
+      <div id="passwordrenterdivid">
+        <label for="passwordrenterid" class="form-label"
+          >Re-enter Password</label
+        >
+
+        <input
+          [type]="showRePassword ? 'text' : 'password'"
+          id="passwordrenterid"
+          class="form-control pe-5"
+          placeholder="Re-enter Password"
+        />
+
+        <i
+          class="bi"
+          [ngClass]="showRePassword ? 'bi-eye-slash-fill' : 'bi-eye-fill'"
+          (click)="toggleRePassword()"
+          id="repasswordeye"
+        >
+        </i>
+      </div>
+
+      <button
+        type="button"
+        id="createaccountbuttonid"
+        class="btn btn-primary w-100 mt-4"
+      >
+        Create Account
+      </button>
+    </form>
+  </div>
+</div>
