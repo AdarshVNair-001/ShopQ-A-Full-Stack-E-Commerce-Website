@@ -4,11 +4,13 @@ import { LoginComponentsComponent } from './Components/login-components/login-co
 import { SignupComponent } from './signup/signup.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './home/home.component';
+import { CartComponent } from './cart/cart.component';
 
 
 const routes: Routes = [
   {path:'login',component:LoginComponentsComponent},
   {path:'signup',component:SignupComponent},
+  {path:'cart',component:CartComponent},
   {
     path:'',component:LayoutComponent,
     children:
@@ -16,7 +18,8 @@ const routes: Routes = [
       {path:'',redirectTo:'home',pathMatch:'full'},
       {path:'home',component:HomeComponent},
     ]
-  }
+  },
+  { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({

@@ -1,21 +1,37 @@
 <nav id="navbardivid">
   <div id="navbaricondiv">
+
     <div id="logodivid">
-      <img src="assets/images/logo.png" alt="Logo" id="logoid" />
-      <b>
-        <i> ShopQ </i>
-      </b>
+      <img src="assets/images/logo.png" alt="Logo" id="logoid">
+      <b><i>ShopQ</i></b>
     </div>
+
     <div id="searchdivid">
-      <input type="text" placeholder="Search" class="form-control" />
+      <input
+        type="text"
+        placeholder="Search products..."
+        class="form-control"
+        id="searchinputid">
+
       <i class="bi bi-search" id="searchiconid"></i>
     </div>
-    <div id="cartdivid">
-      <i class="bi bi-cart" id="carticonid"></i>
+
+    <div id="cartdivid" routerLink="/cart">
+      <i class="bi bi-cart3" id="carticonid"></i>
       <span id="cartcountid">0</span>
     </div>
-    <div id="profiledivid">
-      <i class="bi bi-person" id="profileiconid"></i>
+
+    <div id="profilecontainer">
+      <i
+        class="bi bi-person-circle"
+        id="profileiconid"
+        (click)="toggleProfileMenu()">
+      </i>
+
+      <app-profile
+        *ngIf="toggleProfile">
+      </app-profile>
     </div>
+
   </div>
 </nav>

@@ -128,3 +128,12 @@
 
     font-weight:bold;
 }
+#profilecontainer{
+    position: relative;
+    cursor: pointer;
+}
+
+#profileiconid{
+    font-size: 28px;
+    color: white;
+}
