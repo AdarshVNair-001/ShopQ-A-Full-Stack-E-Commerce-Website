@@ -1,0 +1,130 @@
+#navbardivid{
+    width:100%;
+    height:70px;
+
+    background:#1b1b1b;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 30px;
+
+    box-shadow:0 2px 12px rgba(0,0,0,.4);
+}
+
+#navbaricondiv{
+    width:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+#logodivid{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    color:#ffffff;
+
+    font-size:26px;
+
+    cursor:pointer;
+}
+
+#logoid{
+    width:45px;
+    height:45px;
+}
+
+#searchdivid{
+    width:45%;
+    position:relative;
+}
+
+#searchdivid input{
+    height:42px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#2c2c2c;
+
+    color:#ffffff;
+
+    padding-left:18px;
+    padding-right:50px;
+}
+
+#searchdivid input::placeholder{
+    color:#bdbdbd;
+}
+
+#searchdivid input:focus{
+    background:#343434;
+
+    color:white;
+
+    box-shadow:none;
+
+    border:1px solid #4caf50;
+}
+
+#searchiconid{
+    position:absolute;
+
+    right:18px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#bdbdbd;
+
+    font-size:18px;
+
+    cursor:pointer;
+}
+
+#cartdivid,
+#profiledivid{
+    position:relative;
+
+    color:white;
+
+    font-size:26px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+#cartdivid:hover,
+#profiledivid:hover,
+#searchiconid:hover{
+    color:#4caf50;
+}
+
+#cartcountid{
+    position:absolute;
+
+    top:-8px;
+    right:-10px;
+
+    width:20px;
+    height:20px;
+
+    border-radius:50%;
+
+    background:#ff3b30;
+
+    color:white;
+
+    font-size:11px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-weight:bold;
+}
