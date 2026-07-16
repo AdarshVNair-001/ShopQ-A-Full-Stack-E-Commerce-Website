@@ -1,2 +1,5 @@
-<app-navbar></app-navbar>
+<app-navbar *ngIf="navbartype === 'main'"></app-navbar>
+
+<app-navbar-secondary *ngIf="navbartype === 'secondary'"></app-navbar-secondary>
+
 <router-outlet></router-outlet>

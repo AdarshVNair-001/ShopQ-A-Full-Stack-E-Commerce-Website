@@ -1,0 +1,49 @@
+<nav id="navbardivid">
+
+    <div id="leftsection">
+
+        <i class="bi bi-arrow-left" id="backiconid" routerLink="/home"></i>
+
+        <div id="logodivid" routerLink="/home">
+            <img src="assets/images/logo.png" alt="Logo" id="logo">
+
+            <span id="logotextid">ShopQ</span>
+        </div>
+
+    </div>
+
+    <div id="searchbar">
+        <input
+            type="text"
+            placeholder="Search for products, brands and more"
+            id="searchinput">
+
+        <button id="searchbutton">
+            <i class="bi bi-search"></i>
+        </button>
+    </div>
+
+    <div id="profile">
+
+        <button
+            id="profilebutton"
+            (click)="toggleProfileMenu()">
+
+            <i class="bi bi-person-circle"></i>
+
+        </button>
+
+        <div id="profilemenu" *ngIf="toggleprofile">
+
+            <a routerLink="/profile">My Account</a>
+            <a routerLink="/orders">Orders</a>
+            <a routerLink="/wishlist">Wishlist</a>
+            <div id="logout">
+            <a routerLink="/login">Logout</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>

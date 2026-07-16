@@ -10,6 +10,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { ProfileComponent } from './profile/profile.component';
+import { NavbarSecondaryComponent } from './navbar-secondary/navbar-secondary.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProfileComponent } from './profile/profile.component';
     LayoutComponent,
     HomeComponent,
     CartComponent,
-    ProfileComponent
+    ProfileComponent,
+    NavbarSecondaryComponent
   ],
   imports: [
     BrowserModule,
