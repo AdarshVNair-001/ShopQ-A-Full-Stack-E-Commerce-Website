@@ -10,7 +10,15 @@
           placeholder="Enter Username"
         />
       </div>
-
+      <div id="emaildivid">
+        <label for="emailid" class="form-label">Email</label>
+        <input
+          type="email"
+          id="emailid"
+          class="form-control"
+          placeholder="Enter Email"
+        />
+      </div>
       <div id="passworddivid">
         <label for="passwordid" class="form-label"> Password </label>
 
@@ -55,9 +63,28 @@
         type="button"
         id="createaccountbuttonid"
         class="btn btn-primary w-100 mt-4"
+        (click)="CreateAccount()"
       >
         Create Account
       </button>
+
+
+      <div class="popup-overlay" *ngIf="showPopup">
+        <div class="popup">
+          <div class="popup-icon" [ngClass]="popupType">
+            <i
+              *ngIf="popupType == 'success'"
+              class="bi bi-check-circle-fill"
+            ></i>
+
+            <i *ngIf="popupType == 'error'" class="bi bi-x-circle-fill"></i>
+          </div>
+
+          <p>{{ popupMessage }}</p>
+
+          <button class="popup-btn" (click)="closePopup();">OK</button>
+        </div>
+      </div>
     </form>
   </div>
 </div>
